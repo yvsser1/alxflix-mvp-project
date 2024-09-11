@@ -1,0 +1,131 @@
+.nav-main-container {
+    position: fixed;  //
+    top: 0;           // thanks to this, it overlaps the banner
+    width: 100vw;
+    height: 130px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7rem 1.5rem;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+
+    @media screen and (width <= 720px) {
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 0; 
+    }
+}
+
+//bar that appears when scrolling down the page
+.nav-black {
+    background-image: linear-gradient(180deg, black,  black, rgba(16, 15, 15, 1), rgba(42, 40, 40, 0.7), transparent);
+}
+////
+
+.nav-logo {
+    margin-right: 1rem;
+    font-size: 2.2rem;
+    font-style: italic;
+    text-shadow: 1px 1px 2px black;
+
+    span {
+        text-shadow: 0 0 0 transparent;
+        background: -webkit-linear-gradient(233.25deg,#5b4df6,#ff493b);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.logo-link {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.nav-left-icons {
+    display: flex;
+    flex-wrap: wrap;
+
+    button {
+        @media screen and (width <= 720px) {
+            display: none;
+        }
+    }
+}
+
+
+.nav-left-icon {
+    margin-left: 1rem;
+
+    @media screen and (max-width: 471px) {
+        margin-left: 3px;
+    }
+}
+
+.nav-right-icons {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (width <= 720px) {
+        display: none;
+    }
+}
+
+//-------------- animation for Hello -----------------------
+
+@keyframes hello {
+    from {
+        transform: rotateY(0deg);
+      }
+      to {
+        transform: rotateY(360deg);
+      }
+  }
+
+.nav-hello {
+    margin-right: 1rem;
+    margin-top: 0.6rem;
+    text-shadow: 1px 1px 2px black;
+
+    animation-name: hello;
+    animation-duration: 1.5s;
+    animation-delay: 2s;
+    animation-timing-function: ease-in-out;
+    // animation-iteration-count: 2;
+}
+
+//--------------------------------------------------------
+
+.nav-btns {
+    font-family: 'Poppins', sans-serif;
+    height: 2.2rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.35rem;
+    padding-bottom: 0.6rem;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: whitesmoke;
+    font-size: 1rem;
+    font-weight: 600;
+    margin-top: 0.5rem;
+
+    background-color: rgba(21, 21, 42, 0.3);
+    
+    border-radius: 30px;
+    transition: all 0.7s;
+    
+    &:hover {
+       
+        background-image: linear-gradient(233.25deg,#4d3fe9,#f13d30); //1;
+        color: white;
+    }
+}
+
+.nav-btn-search {
+    margin-right: 1rem;
+    padding-top: 0.55rem;
+}
+

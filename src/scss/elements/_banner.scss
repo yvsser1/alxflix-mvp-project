@@ -1,0 +1,99 @@
+.banner {
+    object-fit: contain;
+    height: 630px;
+
+    @media screen and (min-width: 1600px) {
+        height: 930px;
+    }
+}
+
+.banner-contents {
+    margin-left: 30px;
+    padding-top: 240px;
+
+   @media screen and (min-width: 1600px) {
+        padding-top: 542px;
+    }
+
+    @media screen and (width > 650px) and (width <= 1000px) {
+        padding-top: 262px;
+        margin-left: 10px;
+    }
+
+    @media screen and (max-width: 650px) {
+       margin-left: 10px;
+       padding-top: 277px;
+    }
+}
+
+.banner-title {
+    font-size: 3rem;
+    font-weight: 700;
+    padding-bottom: 0.3rem;
+    text-shadow: 1px 1px 5px black;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+    @media screen and (width > 650px) and (width <= 1000px) {
+        font-size: 2.1rem;
+    }
+
+    @media screen and (max-width: 650px) {
+        font-size: 1.5rem;
+    }
+}
+
+.banner-description {
+    line-height: 21px;
+    padding-top: 16px;
+    font-size: 14.4px;
+    font-weight: 600;
+    max-width: 360px;
+    height: 150px;
+    text-shadow: 1px 1px 6px black;
+
+    @media screen and (max-width: 645px) {
+        padding-right: 10px;
+        max-width: 290px;
+        font-size: 14px;
+        line-height: 19px;
+    }
+}
+
+.banner-btns {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner-btn {
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    color: whitesmoke;
+    font-size: 14.4px;
+    line-height: 16px;
+    font-weight: 400;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin-right: 16px;
+    padding-top: 9.6px;
+    background-color: rgba(18, 18, 37, 0.5);
+    padding-bottom: 9.6px;
+    border-radius: 30px;
+    transition: all 0.7s;
+
+    &:hover {
+        background: linear-gradient(233.25deg,#5b4df6,#ff493b); //1;
+    }
+    &:disabled {
+        background: transparent;
+        background-color: $btn-disabled-backgroundcolor;
+    }
+}
+
+.banner-fadeBottom {
+    height: 128px;
+    background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.41), $main-app-color);  
+}

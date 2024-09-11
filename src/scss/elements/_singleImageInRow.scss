@@ -1,0 +1,221 @@
+.row-posters {
+    width: 100%;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 26px 0;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    @media screen and (width <= 645px) {
+        padding: 15px 0;
+    }
+}
+
+.scroll-moz {
+    scrollbar-width: none;
+}
+
+//div with image and hover
+.row-poster {
+    object-fit: contain;
+    min-height: 183px;
+    width: 100%;
+    min-width: 300px;
+    border-radius: 12px;
+    
+    margin: 0 10px;
+    
+    transition: transform 450ms;
+    overflow: hidden;
+    position: relative;  //!!!!!!!!!!!!!!!!!!!
+
+    &:hover {
+        transform: scale(1.035);
+    }
+
+    @media screen and (width <= 645px) {
+         margin: 0 15px;
+
+        &:hover {
+            transform: none;
+        }
+    }
+
+    @media only screen and (width >= 430px) and (width <= 645px) {
+        margin: 0 50px;
+    }
+
+    @media only screen and (width >= 900px) and (width <= 1051px) {
+        margin: 0 30px;
+    }
+}
+
+//div with image and hover
+.row-posterLarge {
+    //min-height: 475px;
+    width: 100%;
+    min-width: 290px;
+    border-radius: 20px;
+
+    margin-right: 15px;
+    margin-left: 15px;
+    overflow: hidden;
+    position: relative;  //!!!!!!!!!!!!!!!!!!!
+
+    &:hover {
+        transform: scale(1.08);
+    }
+
+    @media screen and (width <= 645px) {
+
+        &:hover {
+            transform: none;
+        }
+    }
+
+    @media only screen and (width >= 2400px) and (width <= 3000px) {
+        margin: 0 30px;
+    }
+
+    @media only screen and (width >= 1610px) and (width <= 1720px) {
+        margin: 0 20px;
+    }
+
+    @media only screen and (width >= 1285px) and (width <= 1375px) {
+        margin: 0 20px;
+    }
+
+     @media only screen and (width >= 921px) and (width <= 1051px) {
+        margin: 0 60px;
+    }
+
+    @media only screen and (width >= 850px) and (width <= 920px) {
+        margin: 0 30px;
+    }
+
+    @media only screen and (width >= 646px) and (width < 850px) {
+        margin: 0 16px;
+    }
+
+    @media only screen and (width >= 380px) and (width <= 645px) {
+        margin: 0 50px;
+        // margin-right: 60px;
+    }
+
+    @media screen and (width < 380px) {
+        margin: 0 23px ;
+    }
+}
+
+.single-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.single-imageLarge {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+//div with hoverem
+.single-image-hover {
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    right: 0;
+    left: 0;
+    position: absolute;
+    background: rgba(26, 42, 78, 0.668);
+    backdrop-filter: blur(2px);
+    border-radius: 12px;
+    transition-duration: 1s;
+
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+//div with hoverem
+.single-image-hoverLarge {
+    width: 100%;
+    height: 100%;
+    top: -100%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+    background: rgba(26, 42, 78, 0.668);
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+    transition-duration: 1s;
+
+    padding: 17px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row-poster:hover .single-image-hover {
+    top: 0;
+}
+
+//styles for hover
+.image-hover-title {
+    margin-bottom: 7px;
+    line-height: 20px;
+}
+
+.image-hover-type-date {
+    font-size: 12px;
+
+    span {
+        font-style: italic;
+        font-weight: 700;
+        color: rgb(220, 20, 110);
+    }
+}
+
+.image-hover-overview {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: justify;
+    width: 100%;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;  
+    overflow: hidden;
+}
+
+.single-hover-overviewLarge {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: justify;
+    display: block;
+}
+
+.btn-div-hover {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.image-hover-btn {
+    
+    @include btnsSecondary();
+
+    &:disabled {
+        background-color: $btn-disabled-backgroundcolor;
+        //rgba(148, 146, 146, 0.716)
+    }
+}

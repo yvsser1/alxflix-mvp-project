@@ -1,0 +1,136 @@
+.footer {
+    height: 100%;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+
+    @media screen and (max-width: 720px) {
+        height: 380px;
+    }
+}
+
+.footer-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4rem;
+    
+    @media screen and (max-width: 720px) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.footer-logos {
+    height: 100%;
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2.5rem;
+
+    @media screen and (max-width: 720px) {
+        text-align: center;
+        margin-left: 0;
+    }
+}
+
+.footer-logo-TMDB {
+    fill: url(#MyGradient);
+    -webkit-fill: url(#MyGradient);
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 720px) {
+        margin-bottom: 5px;
+    }
+}
+
+.footer-logo-movieon {
+    margin-right: 1rem;
+    font-size: 1.7rem;
+    font-style: italic;
+
+    span {
+        background: -webkit-linear-gradient(233.25deg,#5b4df6,#ff493b);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    @media screen and (max-width: 720px) {
+        margin-right: 0;
+    }
+}
+
+.footer-descriptions {
+    font-size: 0.9rem;
+    width: 70%;
+    text-align: center;
+    padding-top: 2.5rem;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    @media screen and (max-width: 720px) {
+        width: 100%;
+        padding: 30px;
+        font-size: 0.8rem;
+    }
+}
+
+.footer-socialIcons {
+    width: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media screen and (max-width: 720px) {
+        width: 150px;
+        flex-direction: row;
+        justify-content: center;
+        margin: 30px 0;
+    }
+}
+
+.icon-insta {
+    @media screen and (max-width: 720px) {
+        margin: 0 30px;
+    }
+}
+
+// -----------animation of social media icons --------------------------------
+
+.footr-socialIcon-spin {
+    cursor: pointer;
+
+    &:hover { 
+        animation: animacja 2s ease 0.1s infinite alternate none;
+    }
+}
+
+@keyframes animacja {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg) scale(1.30);
+      fill: rgb(217, 255, 0);
+    }
+}
+
+// --------------------------------------------------------------------
+
+.footer-copyright {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+
+    span {
+        font-weight: 700;
+        background: -webkit-linear-gradient(233.25deg,#5b4df6,#ff493b);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}

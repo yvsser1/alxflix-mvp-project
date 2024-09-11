@@ -1,0 +1,54 @@
+.mylist {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mylist-lettering {
+    width: 100%;
+    text-align: center;
+    padding-top: 7.6rem;
+    padding-bottom: 1.5rem;
+}
+
+.mylist-movies-counter {
+    width: 100%;
+    text-align: right;
+    margin-bottom: 2rem;
+    padding-right: 2rem;
+    font-size: 1.2rem;
+    
+    span{
+        font-weight: 600;
+        font-size: 1.2rem;
+        background: -webkit-linear-gradient(233.25deg,#5b4df6,#ff493b);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.mylist-main-container {
+    width: 95%;
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.mylist-films-container {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.mylist-empty-list {
+    width: 100%;
+    padding: 40px 10px;
+    text-align: center;
+}

@@ -1,0 +1,114 @@
+.search-main {
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 11rem;
+    flex-grow: 1;
+}
+
+.search-input {
+   width: 100%;
+   height: 10rem;
+   padding-left: 8rem;
+   margin-bottom: 2.3rem;
+
+    input {
+        width: 30%;
+        height: 4.25rem;
+        padding: 0.6rem 0;
+        box-sizing: border-box;
+        border: none;
+        border-bottom: 2px solid white;
+        background-color: $main-app-color;
+        font-size: 2rem;
+        line-height: 2.9rem;
+        font-family: 'Poppins', sans-serif;
+        color: whitesmoke;
+
+        transition: width 0.8s ease-in-out;
+
+        @media screen and (max-width: 900px) {
+            width: 75%;
+            height: 3rem;
+            font-size: 1.2rem;
+            line-height: 2rem;
+        }
+    }
+
+    input:focus {
+        width: 82%;
+        outline: none;
+        border-bottom: 2px solid white;
+        background-color: $main-app-color;
+
+        @media screen and (max-width: 900px) {
+            width: 75%;
+        }
+    }
+
+    @media screen and (max-width: 900px) {
+        padding: 0;
+        text-align: center;
+    }
+}
+
+.search-input-btn-clear {
+    cursor: pointer;
+    width: 40px;
+    height: 4.25rem;
+    padding: 0.6rem 1.5rem;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid white;
+    background-color: $main-app-color;
+
+    font-size: 2rem;
+    line-height: 2.9rem;
+    font-family: 'Poppins', sans-serif;
+    color: whitesmoke;
+
+    @media screen and (max-width: 900px) {
+        //height: 50px;
+        // font-size: 1.5rem;
+        // line-height: 2.4rem;
+        height: 3rem;
+        font-size: 1.2rem;
+        line-height: 2rem;
+        padding: 0;
+    }
+}
+
+.search-results-container {
+    width: 86%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.search-empty-results {
+    width: 100%;
+    margin-bottom: 1.8rem;
+    text-align: center;
+}
+
+//prevents autofil styles in chrome browser
+input:-webkit-autofill,
+input:-webkit-autofill:focus {
+    color-scheme: dark;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0), inset 0 0 0 100px #27282b;
+    font-size: 2rem;
+
+    @media screen and (max-width: 900px) {
+        font-size: 1.2rem;
+    }
+}
