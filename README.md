@@ -1,4 +1,4 @@
-ALXFlix is an MVP portfolio project part of the ALX SE Program, its a movie tracking website similar to IMDB and Letterboxed & Trackt, it uses the api from <a href="https://developer.themoviedb.org/docs/getting-started" target="_blank" rel="noreferrer" rel="noopener"> TheMovieDb API </a>, recommends new movies and the most popular films and series rated by TMDB users.
+ALXFlix🎥🍿 is an MVP portfolio project part of the ALX SE Program, its a movie tracking website similar to IMDB and Letterboxed & Trackt, it uses the api from <a href="https://developer.themoviedb.org/docs/getting-started" target="_blank" rel="noreferrer" rel="noopener"> TheMovieDb API </a>, recommends new movies and the most popular films and series rated by TMDB users.
 ALXFLIX allows users to search for favorite & Trending movies/series, view ratings, see posters, watch trailers and read descriptions, Users can easily add movies to their wishlist for future viewing.
 
 ➡️ Project Link: Soon
