@@ -1,39 +1,34 @@
-# <img src='./public/logoApp.png' alt="screenshot" width="70" height="auto" /> MOViEon app
-Great news! MOViEon is finally done!🎉🎊
+ALXFlix🎥🍿 is an MVP portfolio project part of the ALX SE Program, its a movie tracking website similar to IMDB and Letterboxed & Trackt, it uses the api from <a href="https://developer.themoviedb.org/docs/getting-started" target="_blank" rel="noreferrer" rel="noopener"> TheMovieDb API </a>, recommends new movies and the most popular films and series rated by TMDB users.
+ALXFLIX allows users to search for favorite & Trending movies/series, view ratings, see posters, watch trailers and read descriptions, Users can easily add movies to their wishlist for future viewing.
 
-Project built in React💙
-
-The MOViEon project is a movie website similar to streaming services like Netflix and SkyShowTime, it downloads data about movies and series from <a href="https://developer.themoviedb.org/docs/getting-started" target="_blank" rel="noreferrer" rel="noopener"> TheMovieDb API </a>, recommends film premieres and the most popular films and series rated by TMDB users.
-MOViEon allows user to store selected movies and series by adding them to the created My List. It allows to search for movies in the provided search engine. Has also a modal showing details of a given movie/series along with a link to the trailer on YouTube.
-
-➡️ Project Link: https://movieon24.netlify.app
-
-MOViEon has a mobile version 📱 !!
+➡️ Project Link: Soon
 
 
 ## Screenshots
 
 <div align="center"> 
-  <img src="./public/home1.png" alt="screenshot" />
-  <img src="./public/home2h.png" alt="screenshot" />
-  <img src="./public/home3.png" alt="screenshot" width="405" height="auto"/>
-  <img src="./public/home4.png" alt="screenshot" width="405" height="auto"/>
-  <img src='./public/home5.png' alt="screenshot" />
-  <img src="./public/mylist2.png" alt="screenshot" />
-  <img src="./public/mylist1.png" alt="screenshot" width="405" height="auto"/>
-  <img src="./public/mylist3.png" alt="screenshot" width="405" height="auto"/>
-  <img src="./public/search1.png" alt="screenshot" />
-  <img src="./public/search2.png" alt="screenshot" />
-  <img src="./public/mobile1.png" alt="screenshot" />
+  <img src="https://i.postimg.cc/QxPsBxwt/Screenshot-2024-09-11-135701.png" alt="screenshot" />
+  <img src="https://i.postimg.cc/D0RvKvK8/Screenshot-2024-09-11-135718.png" alt="screenchot>" />
 </div>
 
 
 ## About the Project
 
-Primarily I created MOViEon to learn how to communicate with the API database, practice fetching and learn more about JS promises and try to create a large project based on React.js on my own. 
-But MOViEon is more than that. I tried to make it user-friendly and attractive in appearance. It not only shows newest movies or top rated movies or series but it also gives the opportunity to use a saveable My List, according to the user's preferences. LocalStorage is responsible for storing the data saved there. The data is not deleted when the browser is closed, and is available for future sessions with no expiration date. 
+# ALXFlix
 
-To construct MOViEon, I used React.js components, SCSS for styling, Vite, Context API - transfers data globally, LocalStorage - stores data saved in My List, npm Styled Components - carousels on the home page, Material UI - modal with a description for each movie/series and links to trailers on YouTube.
+I created **ALXFlix** primarily as a learning experience to improve my ability to communicate with API databases, practice fetching data, and dive deeper into JavaScript promises. My goal was to challenge myself by building a large-scale project using React.js independently.
+
+However, **ALXFlix** became much more than just a learning project. I focused on making it both user-friendly and visually appealing. The platform not only showcases the newest and top-rated movies or series, but it also features a customizable **My List**, allowing users to save content based on their preferences. This list is stored using LocalStorage, ensuring that saved data remains intact across browser sessions without an expiration date.
+
+To bring **ALXFlix** to life, I utilized:
+
+- **React.js components** for structuring the app
+- **SCSS** for responsive styling
+- **Vite** for build optimization
+- **Context API** to manage global state
+- **LocalStorage** for persistent data storage in **My List**
+- **Styled Components** (via npm) for dynamic carousels on the homepage
+- **Material UI** to create modals with detailed descriptions of each movie/series, including links to trailers on YouTube
 
 
 ## Table of Contents
@@ -49,16 +44,14 @@ To construct MOViEon, I used React.js components, SCSS for styling, Vite, Contex
 
 ## Usage
 
-Usage is really easy. Visit MOViEon home page to learn about the latest film trends and series of the cinema market. 
+**ALXFlix** offers the following features to enhance the user experience:
 
-Click *Więcej* button next to each movie/series to read the description of the selected movie/series, find out about its three main actors, year of production, film genres and take a look at the trailer if it interests you enough. 
+1. **Find a Movie**: Browse through the latest and top-rated movies or series using the easy-to-navigate homepage.
+2. **Watch Trailers**: Click on any movie or series to view detailed information, including a link to its trailer on YouTube, within a sleek modal popup.
+3. **Save to My List**: Save your favorite movies or series to the **My List** section for easy access. This feature uses LocalStorage to ensure your saved items are persistent across sessions.
+4. **Discover More**: After saving a movie, continue exploring the vast library of content, searching for the next title to enjoy.
 
-Button *+ Moja lista* allows to add every showed movie/series to My list. My list is a storage where user can save his chosen movies or series according to his/her needs. These may be movies that he/her has already watched and wants to keep a list of watched movies or it can be a list of favourites or a list of movies yet to watch. List is editable, user can delete saved data from it any time by using *- Moja lista* button (located on the My List page). 
-The choice of use is entirely given to the user. 
-
-The shared movie *search engine* is helpful in the process of creating a personal list. It can be found on search page under the magnifying glass icon in the navigation bar. TMDB's movie database is large and will definitely allow to find another movie worth watching 😉 
-
-To sum up, find a movie, watch trailer or save it on *My List* and move on to the searching of the next one 🎬🎞
+All of these features are designed to give users a seamless and enjoyable experience while browsing through their favorite content🎬🎞
 
 
 ## Technologies and Tools Used
@@ -95,13 +88,13 @@ To run locally
 clone the project
 
 ```bash
-  git clone https://github.com/RosinskaK/MOViEon_project.git
+  git clone https://github.com/yvsser1/alxflix-mvp-project
 ```
 
 Go to the project directory
 
 ```bash
-  cd MOViEon_project
+  cd alxflix-mvp-project
 ```
 
 Install dependencies
@@ -119,11 +112,11 @@ Start the server
 
 ## Environment Variables
 
-To run this project, you will need to add the following environment variables to your .env file
+in your .env file add the is variable
 
 `VITE_API_KEY=`
 
-you need to go to [TheMovieDB API](https://developer.themoviedb.org/reference/intro/getting-started) and download your own API key to get started
+you need to go to [TheMovieDB API](https://developer.themoviedb.org/reference/intro/getting-started) and get your own API key to get started
 
 
 ## License
@@ -137,15 +130,4 @@ you need to go to [TheMovieDB API](https://developer.themoviedb.org/reference/in
 - [TMDB](https://www.themoviedb.org/)
 - [MUI](https://mui.com/)
 - [npm react-multi-carousel](https://www.npmjs.com/package/react-multi-carousel)
-- [Canva](https://www.canva.com/)
 - [Netlify](https://www.netlify.com/)
-
-
-## Contact
-
-Created by Kasia Rosińska [@RosinskaK](https://www.linkedin.com/in/katarzyna-rosinska/) - feel free to contact me! 👋
-
-If you ever find any issuses or bugs in my project, please conatact me and give me a notice about it 🙇‍♀️
-
-Live link: https://movieon24.netlify.app
-
