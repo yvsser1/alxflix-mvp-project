@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 const HamburgerMenu = () => {
 
   const appPages = [
-    { name: "Strona główna", path: "/" },
-    { name: "Moja lista", path: "/mylist"},
-    { name: "Szukaj filmów", path: "/search"},
+    { name: "Home", path: "/" },
+    { name: "My Watchlist", path: "/mylist"},
+    { name: "Search", path: "/search"},
   ];
   
 
