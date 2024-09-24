@@ -24,7 +24,7 @@ function Footer() {
         <div className="footer-descriptions">
         <p>Track your favorite movies and discover new ones with our app, Tracking Made Easy.</p>
           <p>
-            ALXFlix uses the TMDB API but is not endorsed or
+            ALXFlix uses the TMDB API but is not endorsed nor
             certified by TMDB.@2024
           </p>
         </div>
@@ -38,15 +38,15 @@ function Footer() {
             <IconFacebook />
           </a>
           <a
-            href="https://www.themoviedb.org/?language=pl"
+            href="https://www.x.com/eazyyas"
             target="_blank"
             rel="noreferrer"
-            title="TheMovieDataBase"
+            title="X/Twitter"
           >
             <IconInstagram />
           </a>
           <a
-            href="https://www.linkedin.com/in/"
+            href="https://www.linkedin.com/in/yvsser1"
             target="_blank"
             rel="noreferrer"
             title="LinkedIn"
@@ -56,7 +56,7 @@ function Footer() {
         </div>
       </div>
       <div className="footer-copyright">
-        Created by <span>&copy;Yasser Dalouzi</span>
+        Made with ☕ By<span> &copy;Yasser Dalouzi</span>
       </div>
     </footer>
   );
