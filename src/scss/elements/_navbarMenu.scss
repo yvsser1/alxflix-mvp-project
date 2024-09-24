@@ -1,4 +1,4 @@
-.hamburger-menu {
+.navbar-menu {
   position: relative;
   height: 30px;
 
@@ -9,7 +9,7 @@
   }
 }
 
-.hamburger-menu {
+.navbar-menu {
   li {
     list-style: none;
     margin-left: 10px;
@@ -28,13 +28,13 @@
   padding: 20px 12px;
 }
 
-.hamburger-menu {
+.navbar-menu {
   .checkbox-hm {
     position: absolute;
     display: block;
     height: 32px;
     width: 32px;
-    top: 10px;    //height of checkbox important!!!! with this hamburger icon works 
+    top: 10px;    //height of checkbox important!!!! with this navbar icon works 
     right: 20px;
     z-index: 1000;
     opacity: 0;
@@ -42,7 +42,7 @@
   }
 }
 
-.hamburger-menu .hamburger-lines {
+.navbar-menu .navbar-lines {
   display: block;
   height: 26px;
   width: 32px;
@@ -55,7 +55,7 @@
   justify-content: space-between;
 }
 
-.hamburger-menu .hamburger-lines .hamburger-lines__line {
+.navbar-menu .navbar-lines .navbar-lines__line {
   display: block;
   height: 4px;
   width: 100%;
@@ -64,21 +64,21 @@
   border: 1px solid black;
 }
 
-.hamburger-menu .hamburger-lines .hamburger-lines--line1 {
+.navbar-menu .navbar-lines .navbar-lines--line1 {
   transform-origin: 0% 0%;
   transition: transform 0.4s ease-in-out;
 }
 
-.hamburger-menu .hamburger-lines .hamburger-lines--line2 {
+.navbar-menu .navbar-lines .navbar-lines--line2 {
   transition: transform 0.2s ease-in-out;
 }
 
-.hamburger-menu .hamburger-lines .hamburger-lines--line3 {
+.navbar-menu .navbar-lines .navbar-lines--line3 {
   transform-origin: 0% 100%;
   transition: transform 0.4s ease-in-out;
 }
 
-.hamburger__menu-items {
+.navbar__menu-items {
   padding-top: 100px;
   background-color: rgba(245, 245, 245, 0.895);
   height: 100vh;
@@ -94,18 +94,18 @@
   box-shadow: -3px 2px 6px rgba(0, 0, 0, .4);
 }
 
-.hamburger-menu input[type="checkbox"]:checked ~ .hamburger__menu-items {
+.navbar-menu input[type="checkbox"]:checked ~ .navbar__menu-items {
   transform: translateX(-100%);
 }
 
-.hamburger-menu input[type="checkbox"]:checked ~ .hamburger-lines .hamburger-lines--line1 {
+.navbar-menu input[type="checkbox"]:checked ~ .navbar-lines .navbar-lines--line1 {
   transform: rotate(45deg);
 }
 
-.hamburger-menu input[type="checkbox"]:checked ~ .hamburger-lines .hamburger-lines--line2 {
+.navbar-menu input[type="checkbox"]:checked ~ .navbar-lines .navbar-lines--line2 {
   transform: scaleY(0);
 }
 
-.hamburger-menu input[type="checkbox"]:checked ~ .hamburger-lines .hamburger-lines--line3 {
+.navbar-menu input[type="checkbox"]:checked ~ .navbar-lines .navbar-lines--line3 {
   transform: rotate(-45deg);
 }
